@@ -58,4 +58,17 @@ body {
   text-align: left;
 }
 
+@media (max-width: 600px) {
+  .container {
+    width: 100%; /* Use full width on mobile */
+    padding: 15px;
+  }
 
+  .query-box, .submit-btn {
+    font-size: 14px; /* Adjust font size for readability */
+  }
+
+  .title {
+    font-size: 20px; /* Slightly smaller title */
+  }
+}
