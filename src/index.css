@@ -6,7 +6,6 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  padding: 20px;
 }
 
 .container {
@@ -14,8 +13,9 @@ body {
   padding: 20px;
   border-radius: 12px;
   text-align: center;
-  width: 90%; /* Use a percentage instead of a fixed width */
-  max-width: 500px; /* Ensure it doesn't get too wide */
+  max-width: 500px; /* Use max-width for better responsiveness */
+  width: 90%; /* Allow the container to take up to 90% of the viewport width */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .title {
@@ -24,18 +24,16 @@ body {
 }
 
 .query-box {
-  width: 100%; /* Make it responsive */
-  max-width: 480px; /* Ensure it doesn't stretch too much */
+  width: 100%; /* Make the query box take full width */
   height: 80px;
   padding: 10px;
   border: 2px solid #8fc1a9;
   border-radius: 8px;
   font-size: 16px;
   outline: none;
-  margin: 0 auto; /* Centering the element */
-  display: block; /* Ensures proper alignment */
+  margin-top: 10px; /* Add margin-top for spacing */
+  box-sizing: border-box; /* Include padding and border in width calculation */
 }
-
 
 .submit-btn {
   margin-top: 10px;
@@ -47,7 +45,6 @@ body {
   font-size: 16px; 
   font-weight: bold;
   transition: 0.3s;
-  width: 100%; /* Make button full width on smaller screens */
 }
 
 .submit-btn:hover {
@@ -61,13 +58,10 @@ body {
   border-radius: 8px;
   font-size: 16px;
   text-align: left;
-  word-wrap: break-word;
 }
 
-/* --- Mobile Responsive Design --- */
 @media (max-width: 600px) {
   .container {
-    width: 100%; /* Use full width on mobile */
     padding: 15px;
   }
 
