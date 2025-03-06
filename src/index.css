@@ -16,6 +16,7 @@ body {
   max-width: 500px; /* Use max-width for better responsiveness */
   width: 90%; /* Allow the container to take up to 90% of the viewport width */
   box-sizing: border-box; /* Include padding in width calculation */
+  margin: 0 auto;
 }
 
 .title {
