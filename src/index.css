@@ -24,15 +24,18 @@ body {
 }
 
 .query-box {
-  width: 100%; /* Make it fully responsive */
+  width: 100%; /* Make it responsive */
+  max-width: 480px; /* Ensure it doesn't stretch too much */
   height: 80px;
   padding: 10px;
   border: 2px solid #8fc1a9;
   border-radius: 8px;
   font-size: 16px;
   outline: none;
-  margin-right: 0; /* Remove margin for better alignment */
+  margin: 0 auto; /* Centering the element */
+  display: block; /* Ensures proper alignment */
 }
+
 
 .submit-btn {
   margin-top: 10px;
